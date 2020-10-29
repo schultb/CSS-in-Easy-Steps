@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Flex Direct</title>
+<style>
+
+* { margin : 0 ; padding : 0 ; box-sizing : border-box ; }
+
+div.flex-container { 
+  display : flex ;
+  flex-flow : column wrap ;
+  border : 2px dashed RoyalBlue ;
+  height : 200px ; }
+
+div.flex-container > div {
+  padding : 10px 40px ;
+  background : LightSteelBlue ;  
+  border : 2px solid RoyalBlue ;
+  font: 1.25em sans-serif ;
+}
+
+/* Uncomment the rules below to change order... */
+/*
+div.flex-container > div:nth-child(1) { order : 3 ; }
+div.flex-container > div:nth-child(2) { order : 4 ; }
+div.flex-container > div:nth-child(3) { order : 5 ; }
+div.flex-container > div:nth-child(4) { order : 2 ; } 
+div.flex-container > div:nth-child(5) { order : 1 ; } 
+*/
+
+</style>
+
+</head>
+<body>
+
+<div class="flex-container">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three</div>
+   <div>Four</div>
+  <div>Five</div>
+</div>
+
+<script>
+
+</script>
+</body>
+</html>

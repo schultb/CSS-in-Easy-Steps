@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Grid Order</title>
+<style>
+
+* { margin : 0 ; padding : 0 ; box-sizing : border-box ; }
+
+div.grid-container{
+	display : grid ; height : 200px ; grid-gap : 20px 50px ;
+	grid-template-columns : auto auto auto ;
+    border : 2px dashed DeepSkyBlue ;
+}
+
+div.grid-container > div {
+	padding : 10px 30px ; background : LightBlue ;
+	border : 2px solid DeepSkyBlue ;
+	font : 1.25em sans-serif ;	
+}
+
+/* Uncomment the rules below to change the grid items' order... */
+/*
+div.grid-container > div:nth-child(1) { grid-area : 1/3/2/4 ; }
+div.grid-container > div:nth-child(2) { grid-area : 2/3/3/4 ; }
+div.grid-container > div:nth-child(3) { grid-area : 1/1/2/2 ; }
+div.grid-container > div:nth-child(4) { grid-area : 1/2/2/3 ; }
+div.grid-container > div:nth-child(5) { grid-area : 2/1/3/2 ; }
+div.grid-container > div:nth-child(6) { grid-area : 2/2/3/3 ; }
+*/
+
+/* Uncomment the rules below to change the layout on small screens... */
+/*
+@media only screen and ( max-width:600px ) {
+
+	div.grid-container > div:nth-child(1) { grid-area : 1/span 3/2/4 ; }
+	div.grid-container > div:nth-child(2) { grid-area : 3/3/4/4 ; }
+	div.grid-container > div:nth-child(3) { grid-area : 2/1/3/2 ; }
+	div.grid-container > div:nth-child(4) { grid-area : 2/2/span 2/3 ; }
+	div.grid-container > div:nth-child(5) { grid-area : 3/1/4/2 ; }
+	div.grid-container > div:nth-child(6) { grid-area : 2/3/3/4 ; }
+
+}
+*/
+
+</style>
+
+</head>
+
+<body>
+
+<div class="grid-container">
+<div>One</div>
+<div>Two</div>
+<div>Three</div>
+<div>Four</div>
+<div>Five</div>
+<div>Six</div>
+</div>
+
+
+<script>
+
+</script>
+</body>
+</html> 

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Grid Gaps</title>
+<style>
+
+* { margin : 0 ; padding : 0 ; box-sizing : border-box ; }
+
+div.grid-container{
+	display : grid ; height : 200px ;
+	grid-template-columns : 100px 100px 100px;
+	grid-template-rows : 100px 100px ; 
+
+	justify-content : space-evenly ;
+	align-items : center ;
+	align-content : center ;
+	
+	border : 2px dashed DeepSkyBlue ;
+}
+
+div.grid-container > div {
+	padding : 10px 30px ;
+	background : LightBlue ;
+	border : 2px solid DeepSkyBlue ;
+    font : 1.25em sans-serif ;
+}
+
+/* Uncomment the  rules below to increase both gaps... */
+
+
+div.grid-container{
+	  grid-column-gap : 80px ; 
+	  grid-row-gap : 20px ;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<div class="grid-container">
+<div>One</div>
+<div>Two</div>
+<div>Three</div>
+<div>Four</div>
+<div>Five</div>
+<div>Six</div>
+</div>
+
+
+<script>
+
+</script>
+</body>
+</html> 

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Flex Resizing</title>
+<style>
+
+* { margin : 0 ; padding : 0 ; box-sizing : border-box ; }
+
+div.flex-container {
+  display : flex ;
+  margin : 20px ;
+  border : 2px dashed RoyalBlue ;
+}
+
+div.flex-container > div {
+  padding : 30px 20px ;
+  background : LightSteelBlue ;   
+  border : 2px solid RoyalBlue ;
+  font: 1.25em sans-serif ;
+}
+
+div.top > div {   flex : 1 1 50px ; }
+
+div.btm > div {  flex : 1 1 250px ; }
+
+/* Uncomment the rule below to resize two flex items... */
+/*
+div.top > div:nth-child(3) { flex-grow : 5 ; }
+div.btm > div:nth-child(2) { flex-shrink : 0 ; }
+*/
+
+</style>
+
+</head>
+<body>
+
+<div class="flex-container top">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three</div>
+</div>
+
+<div class="flex-container btm">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three</div>
+</div>
+
+<script>
+
+</script>
+</body>
+</html>

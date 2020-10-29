@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Grid Alignment</title>
+<style>
+
+* { margin : 0 ; padding : 0 ; box-sizing : border-box ; }
+	
+div.grid-container {
+	display : grid ; height : 200px ; 
+	grid-template-columns : auto auto auto auto ;
+	justify-content : space-between ;
+	align-items : center ;
+	border : 2px dashed DeepSkyBlue ;
+}
+
+div.grid-container > div {
+	padding : 10px 40px ;
+	background : LightBlue ;
+	border : 2px solid DeepSkyBlue ;
+    font : 1.25em sans-serif ;
+}
+
+/* Uncomment the rules below for individual alignment...
+div.grid-container > div:nth-child(2) { align-self : end ; }
+div.grid-container > div:nth-child(3) { align-self : start ; }
+*/
+
+</style>
+
+</head>
+
+<body>
+
+<div class="grid-container">
+<div>One</div>
+<div>Two</div>
+<div>Three</div>
+<div>Four</div>
+<div>Five</div>
+</div>
+
+
+<script>
+
+</script>
+</body>
+</html> 

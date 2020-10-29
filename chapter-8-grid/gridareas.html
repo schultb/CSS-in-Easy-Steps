@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico">
+<title>Grid Areas</title>
+<style>
+
+* { margin : 0 ; padding : 0 ; box-sizing : border-box ; }
+
+div.grid-container {
+  display : grid ; height : 200px ;
+  grid-template-columns : 20% auto auto auto 20% ;
+  grid-template-rows : 20% auto 20% ;
+  border : 2px dashed DeepSkyBlue ;
+}
+
+div.grid-container > div {
+	padding : 10px 30px ; background : LightBlue ;
+	border : 2px solid DeepSkyBlue ;
+	font : 1.25em sans-serif ;	
+}
+
+/* Uncomment the rules below to apply areas... */
+/*
+
+div.grid-container > div:nth-child(1) { grid-area : head ; }
+div.grid-container > div:nth-child(2)  { grid-area : menu ; }
+div.grid-container > div:nth-child(3)  { grid-area : main ; }
+div.grid-container > div:nth-child(4)  { grid-area : aside ; }
+div.grid-container > div:nth-child(5)  { grid-area : foot ; }
+
+div.grid-container {
+   grid-template-areas :
+    'head head head head head'
+    'menu main main main aside'
+    'menu foot foot foot foot'; 
+}
+
+*/
+
+</style>
+
+</head>
+
+<body>
+
+<div class="grid-container">
+<div>Head</div>
+<div>Menu</div>
+<div>Main</div>
+<div>Aside</div>
+<div>Foot</div>
+</div>
+
+
+<script>
+
+</script>
+</body>
+</html> 
